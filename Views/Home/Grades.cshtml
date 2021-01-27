@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Calculate Your Grade";
+    ViewBag.h1 = "Calculate Your Grade";
+}
+
+@model IS_413_Assignment2.Models.GradesModel
+
+<body>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> this allows for a range slider to have a numeric value to it-->
+
+    <!--    grade calclulator form-->
+    <div class="div">
+        <form method="post">
+            <fieldset class="fieldset-auto-width">
+                <legend>Grade Calculator</legend>
+                <label for="assignmentsPercent">Assignments Grade out of 50:</label>
+                <input type="number" id="assignmentsPercent" asp-for="assignmentsPercent" min="0" max="50" step="1" value="0">
+                <!--<input type="text" value="0"> oninput="updateRangeInput(this)" value="0"*/-->
+                <br><br>
+
+                <label for="GroupProjectPercent">Group Project Grade out of 10:</label>
+                <input type="number" id="GroupProjectPercent" asp-for="GroupProjectPercent" min="0" max="10" step="1" value="0"><br><br>
+
+                <label for="QuizzesPercent">Quizzes Grade out of 10:</label>
+                <input type="number" id="QuizzesPercent" asp-for="QuizzesPercent" min="0" max="10" step="1" value="0"><br><br>
+
+                <label for="ExamsPercent">Exams Grade out of 20:</label>
+                <input type="number" id="ExamsPercent" asp-for="ExamsPercent" min="0" max="20" step="1" value="0"><br><br>
+
+                <label for="IntexPercent">INTEX Grade out of 10:</label>
+                <input type="number" id="IntexPercent" asp-for="IntexPercent" min="0" max="10" step="1" value="0"><br><br>
+
+                <center>
+                    <input type="submit" value="submit" id="submit" name="submit" />
+                </center>
+
+            </fieldset>
+            <div asp-validation-summary="All"></div>
+        </form>
+
+        <!--an area where the calculated grade can be outputted-->
+        @*<fieldset>
+                <legend>Calculated Grade</legend>
+                <a class="grade" name="output" id="output"></a>
+            </fieldset>*@
+
+    </div>
+
+</body>

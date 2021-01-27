@@ -1,0 +1,72 @@
+﻿body {
+    font-family: sans-serif;
+    background-color: lightblue;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+label{
+    font-weight: bold;
+    width:auto;
+    display: inline-block;
+    width: 250px;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+.fieldset-auto-width {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.bold {
+    font-weight: bold;
+}
+
+footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: gray;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: gray;
+    
+}
+
+.div{
+    display: flex;
+    justify-content: space-around
+}
+
+.grade{
+    font-weight: bold;
+    text-size-adjust:auto;
+}
