@@ -16,6 +16,26 @@ $("#submit").click(function () {
     var iLetterGrade = '';
 
     //calculate the final grade percent and letter
+    if (iAssignmentScore > 50) {
+        alert("Assignment grade must be less than or equal to 50.\nTotal Score cannot exceede 100%");
+        return;
+    }
+    if (iGroupProjectScore > 10) {
+        alert("Group project grade must be less than or equal to 10.\nTotal Score cannot exceede 100%");
+        return;
+    }
+    if (iQuizzesScore > 10) {
+        alert("Quizzes grade must be less than or equal to 10.\nTotal Score cannot exceede 100%");
+        return;
+    }
+    if (iExamsScore > 20) {
+        alert("Exams grade must be less than or equal to 20.\nTotal Score cannot exceede 100%");
+        return;
+    }
+    if (iIntexScore > 10) {
+        alert("Intex grade must be less than or equal to 10.\nTotal Score cannot exceede 100%");
+        return;
+    }
 
     iFinalGrade = iAssignmentScore + iGroupProjectScore + iQuizzesScore + iExamsScore + iIntexScore;
 
