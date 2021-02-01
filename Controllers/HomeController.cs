@@ -31,7 +31,10 @@ namespace IS_413_Assignment2.Controllers
             {
                 return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                return View();
+            }
 
 
         }
